@@ -17,7 +17,7 @@ export default function Page() {
                 <Hero115
                     heading="The easiest way to personalize your community"
                     description="Create rich and interactive messages in minutes."
-                    button={{ text: "Join Waitlist", url: "https://messagekit.gg" }}
+                    button={{ text: "Join Waitlist", url: "/waitlist" }}
                     trustText="No email required!"
                     // trustText="Join 3 others already on the waitlist!"
                 />

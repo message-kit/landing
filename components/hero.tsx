@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Input } from "./ui/input";
 
 import { SiDiscord } from "@icons-pack/react-simple-icons";
+import Link from "next/link";
 
 interface Hero115Props {
     icon?: React.ReactNode;
@@ -56,10 +57,12 @@ const Hero115 = ({
                             {description}
                         </p>
                         <div className="flex flex-col items-center justify-center gap-3 pt-3 pb-12 mt-6">
-                            <Button size="lg">
-                                <SiDiscord />
-                                {button.text}
-                                <ChevronRightIcon />
+                            <Button size="lg" asChild>
+                                <Link href={button.url}>
+                                    <SiDiscord />
+                                    {button.text}
+                                    <ChevronRightIcon />
+                                </Link>
                             </Button>
                             {/* {trustText && <div className="text-xs text-muted-foreground">{trustText}</div>} */}
                         </div>
