@@ -26,7 +26,7 @@ export default function Page() {
     }, [supabase]);
 
     return (
-        <div className="flex justify-center items-center h-screen text-muted-foreground text-sm">
+        <div className="flex justify-center items-center h-screen text-muted-foreground text-sm px-6">
             Adding you to the waitlist...
         </div>
     );
