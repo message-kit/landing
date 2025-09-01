@@ -3,7 +3,6 @@ import { AtSignIcon, ChevronRightIcon, MailIcon, Wifi, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Input } from "./ui/input";
-import { CoolMode } from "./magicui/cool-mode";
 
 import { SiDiscord } from "@icons-pack/react-simple-icons";
 
@@ -53,15 +52,15 @@ const Hero115 = ({
                         <h2 className="mx-auto max-w-5xl text-center text-3xl font-bold font-display text-balance leading-tight md:text-5xl">
                             {heading}
                         </h2>
-                        <p className="mx-auto max-w-3xl text-center text-muted-foreground md:text-lg mt-6">{description}</p>
+                        <p className="mx-auto max-w-3xl text-center text-muted-foreground md:text-lg mt-6">
+                            {description}
+                        </p>
                         <div className="flex flex-col items-center justify-center gap-3 pt-3 pb-12 mt-6">
-                            <CoolMode options={{ size: 35 }}>
-                                <Button size="lg">
-                                    <SiDiscord />
-                                    {button.text}
-                                    <ChevronRightIcon />
-                                </Button>
-                            </CoolMode>
+                            <Button size="lg">
+                                <SiDiscord />
+                                {button.text}
+                                <ChevronRightIcon />
+                            </Button>
                             {/* {trustText && <div className="text-xs text-muted-foreground">{trustText}</div>} */}
                         </div>
                     </div>
